@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function Table(props) {
+  const { val } = props;
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center gap-20">
       <table className="w-full">
         <thead>
           <tr className="border-b-2 border-neutral-900">
@@ -27,6 +28,11 @@ export default function Table(props) {
           </tr>
         </tbody>
       </table>
+      {val == 2 && (
+        <button className="focus:outline-none text-white bg-purple-300 hover:bg-purple-400 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">
+          load more
+        </button>
+      )}
     </div>
   );
 }
