@@ -7,8 +7,8 @@ import Table from "./components/Table";
 let buttons = [
   { name: "All product", val: 1, component: <Table val={1} /> },
   { name: "Load more", val: 2, component: <Table val={2} /> },
-  { name: "Filter by category", val: 3, component: <Gallery /> },
-  { name: "Filter by brand", val: 4, component: <Gallery /> },
+  { name: "Filter by category", val: 3, component: <Gallery val={3} /> },
+  { name: "Filter by brand", val: 4, component: <Gallery val={4} /> },
   { name: "Add product", val: 5, component: <AddProduct /> }
 ];
 function App() {
